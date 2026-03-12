@@ -1,0 +1,13 @@
+# Best laptop buying guides – one URL per line (# = comment)
+# Free-tier POC: keep 4 URLs to limit crawl size and stay under Gemini embed quota (100/min)
+# Wirecutter / NYT
+https://www.nytimes.com/wirecutter/reviews/best-laptops/
+# PCMag
+https://www.pcmag.com/picks/the-best-laptops
+# CNET
+https://www.cnet.com/tech/computing/best-laptop/
+https://www.cnet.com/laptop-buying-guide
+# Uncomment to add more (may need longer build due to embed rate limit):
+# https://thewirecutter.com/reviews/best-laptops/
+# https://www.pcmag.com/how-to/how-to-buy-a-laptop
+# https://www.consumerreports.org/electronics/computers/best-laptops-a1064952948/

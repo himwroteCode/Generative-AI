@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Buying Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'laptop_guide/guide.css' %}?v=3">
+</head>
+<body data-theme="system">
+    <div class="guide-app">
+        <header class="guide-header">
+            <h1><i class="fas fa-laptop"></i> Laptop Buying Guide</h1>
+            <p>Learn the basics, then ask anything or get a config recommendation.</p>
+        </header>
+
+        <div class="guide-layout" id="guide-layout">
+            <aside class="learn-section" id="learn-section">
+                <button type="button" class="learn-toggle" id="learn-toggle" title="Expand or collapse Learn the basics" aria-label="Toggle Learn the basics">
+                    <i class="fas fa-chevron-left" id="learn-toggle-icon"></i>
+                </button>
+                <div class="learn-section-inner">
+                <h2>Learn the basics</h2>
+                <div class="learn-cards">
+                    <section class="learn-card" id="learn-cpu">
+                        <h3><i class="fas fa-microchip"></i> CPU</h3>
+                        <p>The processor is the brain of your laptop. More cores help with multitasking and heavy apps; newer generations are faster and more efficient. For everyday use, a mid-range 4–6 core CPU (Intel i5/Ryzen 5 or similar) is usually enough. For coding, video editing, or gaming, consider 6–8 cores (i7/Ryzen 7).</p>
+                        <p class="learn-tip"><strong>Quick tip:</strong> Intel and AMD are both solid; compare by generation and core count, not brand alone.</p>
+                    </section>
+                    <section class="learn-card" id="learn-ram">
+                        <h3><i class="fas fa-memory"></i> RAM</h3>
+                        <p>RAM (memory) determines how many apps and browser tabs you can run smoothly. <strong>8 GB</strong> is the minimum for light use. <strong>16 GB</strong> is the sweet spot for most people—coding, many tabs, and light creative work. <strong>32 GB</strong> is for heavy multitasking, virtual machines, or large media projects.</p>
+                        <p class="learn-tip"><strong>Quick tip:</strong> Prefer 16 GB if your budget allows; 8 GB can feel tight quickly.</p>
+                    </section>
+                    <section class="learn-card" id="learn-storage">
+                        <h3><i class="fas fa-hdd"></i> Storage</h3>
+                        <p>Storage holds your OS, apps, and files. <strong>SSDs</strong> are much faster than HDDs—always choose SSD for the main drive. <strong>NVMe</strong> SSDs are faster than SATA SSDs. For size: 256 GB is tight; 512 GB is comfortable for most; 1 TB if you keep lots of media or games.</p>
+                        <p class="learn-tip"><strong>Quick tip:</strong> 512 GB NVMe SSD is a good default; upgrade if you work with large files.</p>
+                    </section>
+                    <section class="learn-card" id="learn-display">
+                        <h3><i class="fas fa-tv"></i> Display</h3>
+                        <p>Screen size affects portability and comfort. 13–14" is light and portable; 15–16" is a balance of size and mobility; 17" is heavy but great for media. <strong>Resolution:</strong> 1080p (FHD) is standard and fine for most uses. 2K/4K looks sharper but uses more battery. <strong>Refresh rate:</strong> 60 Hz is standard; 90–120 Hz is nicer for smooth scrolling and gaming.</p>
+                        <p class="learn-tip"><strong>Quick tip:</strong> FHD (1920×1080) is the best value; higher resolution is optional.</p>
+                    </section>
+                    <section class="learn-card" id="learn-gpu">
+                        <h3><i class="fas fa-gamepad"></i> GPU</h3>
+                        <p>Most laptops have <strong>integrated</strong> graphics (built into the CPU)—enough for office work, browsing, and light photo/video use. A <strong>dedicated GPU</strong> (NVIDIA/AMD) is needed for serious gaming, 3D work, or heavy video editing. If you don’t game or do professional creative work, integrated is usually enough.</p>
+                        <p class="learn-tip"><strong>Quick tip:</strong> Only pay for a dedicated GPU if you know you need it.</p>
+                    </section>
+                    <section class="learn-card" id="learn-ports">
+                        <h3><i class="fas fa-plug"></i> Ports & battery</h3>
+                        <p><strong>USB-C</strong> and <strong>Thunderbolt</strong> (USB-C with more speed) are the modern standard; they can charge the laptop and connect monitors. Check how many USB (and USB-A) ports you need. <strong>Battery life</strong> varies a lot: smaller screens and efficient CPUs last longer; manufacturers’ numbers are often optimistic. Look for “all-day” claims (8+ hours) if you’re away from an outlet often.</p>
+                        <p class="learn-tip"><strong>Quick tip:</strong> At least one USB-C is useful for future-proofing; more is better if you use dongles.</p>
+                    </section>
+                </div>
+                </div>
+            </aside>
+
+            <div class="chat-section">
+                <div class="chat-section-header">
+                    <h2><i class="fas fa-comments"></i> Ask anything or find your laptop</h2>
+                    <p>Ask technical questions, compare options, or describe your needs and budget for a config recommendation.</p>
+                </div>
+                <main class="chat-box" id="guide-chat-box" role="log" aria-live="polite" aria-label="Chat messages"></main>
+                <div class="typing-indicator hidden" id="guide-typing-indicator">
+                    <div class="typing-content">
+                        <div class="typing-avatar"><i class="fas fa-robot"></i></div>
+                        <div class="typing-dots"><span></span><span></span><span></span></div>
+                    </div>
+                </div>
+                <div class="input-area">
+                    <form id="guide-chat-form" class="chat-input">
+                        <div class="input-wrapper">
+                            <input type="text" id="guide-user-input" placeholder="Ask about laptops or describe your needs..." autocomplete="off" required>
+                        </div>
+                        <button type="submit" class="send-btn" title="Send"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'laptop_guide/guide.js' %}?v=3"></script>
+</body>
+</html>

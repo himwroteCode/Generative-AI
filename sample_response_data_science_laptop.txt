@@ -1,0 +1,16 @@
+Query:
+I want to buy a laptop for my DataScience training preparation. Specifically for AI/ML model building and training. But not for CV related or image processing/generation related tasks. Suggest me the configuration.
+
+Response (from /ask/ API):
+For Data Science training, especially for AI/ML model building and training, you'll need a robust configuration to handle the computational demands.
+
+Here's a suggested configuration, leaning towards the "High" budget tier ($1000+) for optimal performance, with a note for a "Mid" tier option:
+
+*   **CPU:** A high-tier processor is crucial for data preprocessing and general model execution. Look for an **Intel Core Ultra 7/9, Intel Core i7/i9 (latest generation), or AMD Ryzen 7/9 (latest generation)**. These offer strong multi-core performance.
+*   **RAM:** For AI/ML tasks and handling large datasets, **32GB of RAM** is highly recommended. While 16GB is an absolute minimum, 32GB will significantly improve performance by preventing the system from swapping data to the slower SSD.
+*   **Storage:** A fast **1TB NVMe SSD** is ideal. This will ensure quick loading of datasets, models, and applications. 512GB is a minimum, but 1TB provides ample space for various datasets and software.
+*   **GPU:** Even without CV/image tasks, a dedicated GPU (dGPU) is extremely beneficial for accelerating deep learning models and many machine learning algorithms. Look for a laptop with an **Nvidia GeForce RTX (e.g., RTX 4060 or higher) or AMD Radeon RX series dGPU with at least 8GB of VRAM (12GB+ would be even better)**. The dedicated memory (VRAM) is key for handling model parameters and intermediate computations.
+*   **Display:** A 14-inch to 16-inch display with **Full HD (1920x1080) or higher resolution** will be comfortable for coding and data visualization.
+
+**Mid-tier ($600-$1000) alternative:**
+If your budget is tighter, aim for an **Intel Core i5/i7 or AMD Ryzen 5/7 (mid-to-latest generation) CPU**, **16GB of RAM**, a **512GB NVMe SSD**, and a **dGPU with 6GB-8GB of VRAM** (e.g., Nvidia GeForce RTX 3050/4050). This will still be capable but might show limitations with very large datasets or complex models.

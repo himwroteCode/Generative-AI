@@ -1,0 +1,11 @@
+# Laptop guide app + RAG
+Django>=4.2
+python-dotenv>=1.0
+langchain-core>=0.2
+langchain-google-genai>=2.0
+langchain-community>=0.2
+langchain-chroma>=0.1
+chromadb>=0.4
+langchain-text-splitters>=0.2
+beautifulsoup4>=4.12
+tavily-python>=0.3
